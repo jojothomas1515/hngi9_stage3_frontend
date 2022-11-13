@@ -1,0 +1,115 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 2%;
+  justify-content: space-between;
+  gap: 1rem;
+  position: relative;
+  z-index: 100;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar .Logo {
+  width: 233px;
+  cursor: pointer;
+}
+
+.navbar .navi {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar .navi {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar .navi #navMenu:checked + nav {
+    top: 100% !important;
+  }
+}
+
+.navbar .navi svg {
+  fill: #A02279;
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar .navi svg {
+    display: block;
+    height: 2rem;
+    margin-top: 5px;
+  }
+}
+
+.navbar .navi nav {
+  margin-top: 5px;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar .navi nav {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 90vh;
+    top: -100vh;
+    background: #A02279;
+    flex-direction: column;
+    gap: 0;
+    justify-content: start;
+    color: white;
+    transition-property: top;
+    transition: 200ms ease-in-out;
+    z-index: 10;
+  }
+
+  .navbar .navi nav > a {
+    text-align: center;
+    color: inherit;
+    width: 100%;
+    padding: 2rem;
+    background-color: #4c1039;
+    border-bottom: 1px solid white;
+  }
+}
+
+.navbar .wallet {
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  min-width: 170px;
+  line-height: 20px;
+  font-size: 16px;
+  text-align: center;
+  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+}
+
+.navbar .wallet.wallet2 {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .navbar .wallet.wallet1 {
+    display: none;
+  }
+
+  .navbar .wallet.wallet2 {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,22 @@
+.card {
+  --width: 296px;
+  --padding: 1rem;
+  --font-size: 12px;
+  width: var(--width);
+  padding: var(--padding);
+  border-radius: 15px;
+  border: 1px solid #D7D7D7;
+  font-size: var(--font-size);
+
+  .nft__image {
+  }
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rating {
+    width: max-content;
+  }
+}
