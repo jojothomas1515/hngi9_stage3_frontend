@@ -1,15 +1,15 @@
 import React from "react";
+import "../styles/pages/Home.css"
 import {Card} from "../components/Card";
-import "../styles/components/Card.css"
 
 const Home = () => {
     return (<>
         <div className="container">
             <section className={"intro"}>
                 <div className="search__info">
-                    <h1>Rent a <span className={"notice"}>Place</span> away from <span
+                    <h3 className={"intro__header"}>Rent a <span className={"notice"}>Place</span> away from <span
                         className={"notice"}>Home</span> in the <span className={"notice"}>Metaverse</span>
-                    </h1>
+                    </h3>
                     <p>we provide you access to luxury and affordable houses in the metaverse, get a chance to turn
                         your imagination to reality at your comfort zone</p>
 
@@ -37,7 +37,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <section>
+            <section className={"contents"}>
                 <h1>Inspiration for your next adventure</h1>
 
 
@@ -76,7 +76,7 @@ const Home = () => {
                         Learn More
                     </a>
                 </div>
-                <img src={require("../assets/intro_Images/Frame 59546learnmore.jpg")} alt="nft"/>
+                <img src={require("../assets/others/Frame 59546.png")} alt="nft"/>
 
             </section>
         </div>

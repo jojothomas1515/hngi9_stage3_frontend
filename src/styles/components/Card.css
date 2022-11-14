@@ -2,16 +2,24 @@
   --width: 296px;
   --padding: 1rem;
   --font-size: 12px;
-  width: var(--width);
+  max-width: var(--width);
+  min-width: 160px;
   padding: var(--padding);
   border-radius: 15px;
   border: 1px solid #D7D7D7;
   font-size: var(--font-size);
+  align-self: flex-start;
 }
+
+.card .nft__image {
+  width: 100%;
+}
+
 .card > div {
   display: flex;
   justify-content: space-between;
 }
+
 .card .rating {
   width: max-content;
 }
