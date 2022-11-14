@@ -108,23 +108,6 @@
 .contents h1 {
   text-align: center;
 }
-.contents .card__flex {
-  max-width: 100%;
-  display: grid;
-  gap: 1rem;
-  justify-content: center;
-  grid-template-columns: repeat(4, minmax(160px, 1fr));
-}
-@media screen and (max-width: 769px) and (min-width: 481px) {
-  .contents .card__flex {
-    grid-template-columns: repeat(2, minmax(160px, 1fr));
-  }
-}
-@media screen and (max-width: 480px) and (min-width: 320px) {
-  .contents .card__flex {
-    grid-template-columns: repeat(1, minmax(160px, 1fr));
-  }
-}
 
 .learn__more {
   display: flex;

@@ -129,24 +129,6 @@
   }
 
 
-  .card__flex {
-    max-width: 100%;
-    display: grid;
-    gap: 1rem;
-    justify-content: center;
-
-
-    grid-template-columns: repeat(4, minmax(160px, 1fr));
-
-    @media screen and (max-width: 769px) and (min-width: 481px) {
-      grid-template-columns: repeat(2, minmax(160px, 1fr));
-    }
-
-    @media screen and (max-width: 480px) and (min-width: 320px) {
-      grid-template-columns: repeat(1, minmax(160px, 1fr));
-
-    }
-  }
 }
 
 .learn__more {

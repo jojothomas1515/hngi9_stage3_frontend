@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/pages/Home.css"
 import {Card} from "../components/Card";
+import {Cardcon} from "../components/CardCon";
 
 const Home = () => {
     return (<>
@@ -40,8 +41,7 @@ const Home = () => {
             <section className={"contents"}>
                 <h1>Inspiration for your next adventure</h1>
 
-
-                <div className={"card__flex"}>
+                <Cardcon>
                     <Card name={"Desert king"} availability={"2 weeks"} distance={2345} price={1}
                           imgUrl={require("../assets/nfts/Frame 151nft.jpg")}/>
                     <Card name={"Desert king"} availability={"2 weeks"} distance={2345} price={1}
@@ -58,7 +58,7 @@ const Home = () => {
                           imgUrl={require("../assets/nfts/Frame 151nft-5.jpg")}/>
                     <Card name={"Desert king"} availability={"2 weeks"} distance={2345} price={1}
                           imgUrl={require("../assets/nfts/Frame 151nft-6.jpg")}/>
-                </div>
+                </Cardcon>
             </section>
 
             <section className={"learn__more"}>
