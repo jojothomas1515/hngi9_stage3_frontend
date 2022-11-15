@@ -32,8 +32,8 @@ export const Navbar = () => {
                     <Link className="links" onClick={closeMenu} to={"./places"}>Place to stay</Link>
                     <a href="#" className="links" onClick={closeMenu}>NFTs</a>
                     <a href="#" className="links" onClick={closeMenu}>Community</a>
-                    <a href="#" className="wallet wallet2" onClick={e => {
-                        closeMenu()
+                    <a href="#" className="wallet wallet2" onClick={() => {
+                        setModal(true)
                     }}>Connect Wallet</a>
                 </nav>
 
