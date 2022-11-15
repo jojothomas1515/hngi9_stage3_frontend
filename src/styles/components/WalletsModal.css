@@ -12,6 +12,7 @@
   border: 1px solid #D7D7D7;
   border-radius: 10px;
   box-shadow: 0 0 2px #D7D7D7;
+  z-index: 8;
 }
 .wallets__modal h4 {
   padding: 1rem 2rem;
