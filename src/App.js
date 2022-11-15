@@ -8,7 +8,7 @@ import {Footer} from "./components/Footer";
 import {Places} from "./pages/Places";
 
 function App() {
-    return (
+    return (<>
         <div className="App">
             <Navbar/>
             <Routes>
@@ -17,7 +17,8 @@ function App() {
             </Routes>
             <Footer/>
         </div>
-    );
+
+    </>);
 }
 
 export default App;
