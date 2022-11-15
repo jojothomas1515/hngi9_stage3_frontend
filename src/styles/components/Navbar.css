@@ -7,6 +7,12 @@
   gap: 1rem;
   position: relative;
   z-index: 100;
+  padding: 1rem 4rem;
+}
+@media screen and (max-width: 850px) {
+  .navbar {
+    padding: 1rem 1rem;
+  }
 }
 .navbar a {
   text-decoration: none;
