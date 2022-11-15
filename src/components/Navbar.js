@@ -33,6 +33,7 @@ export const Navbar = () => {
                     <a href="#" className="links" onClick={closeMenu}>NFTs</a>
                     <a href="#" className="links" onClick={closeMenu}>Community</a>
                     <a href="#" className="wallet wallet2" onClick={() => {
+                        closeMenu()
                         setModal(true)
                     }}>Connect Wallet</a>
                 </nav>
